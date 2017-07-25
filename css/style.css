@@ -1,0 +1,300 @@
+/* =========
+  GENERAL
+========== */
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+  font-family: 'Merriweather', serif;
+  }
+
+h1  {
+  font-size: 1em;
+
+  margin-top: auto;
+  margin-bottom: 0;
+  padding: 25px 0;
+
+  letter-spacing: .5px;
+
+  color: white;
+  background: #7b848e;
+  }
+
+h2  {
+  font-size: 1.125em;
+
+  color: #2d3945;
+  }
+
+/* =========
+  LAYOUT
+========== */
+
+/* =================
+  Header and Footer
+=================== */
+
+header,
+footer {
+  text-align: center;
+}
+
+footer
+  {
+    font-style: italic;
+    background: #7b848e;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+header p,
+footer p
+  {
+    font-size: .875em;
+    font-weight: 300;
+
+    margin-top: auto;
+    padding: 0 10px 15px;
+  }
+
+header p {
+    color: #9da3a8;
+  }
+
+footer p {
+  color: white
+}
+
+.subhead
+  {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+/* =======
+  Form
+======== */
+
+form {
+  width: 100%;
+  padding: 0 30px 5px;
+  }
+
+form p
+  {
+    font-size: .875em;
+    font-weight: 300;
+
+    color: #46698b;
+  }
+
+fieldset {
+  padding: 0;
+  border: none;
+  }
+
+legend {
+  font-size: 1.125em;
+  font-weight: 700;
+  color: #2d3945;
+  margin-bottom: 20px;
+  }
+
+label  {
+  font-size: .875em;
+  font-weight: 300;
+
+  color: #46698b;
+  }
+
+label,
+.newsletter,
+.format {
+  margin-top: 10px;
+  }
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea  {
+  font-weight: 300;
+  width: 100%;
+  margin: 10px 0 20px;
+  padding: 15px;
+  color: #bec2c5;
+  border: none;
+  border-radius: 3px;
+  background: #eff0f1;
+  }
+
+select[id='state'] {
+  background: #eff0f1;
+  border: 0;
+  color: #bec2c5;
+  display: block;
+  margin: 10px 0 20px;
+  height: 50px;
+  width: 100%;
+}
+
+input[placeholder] {
+  font-size: .75em;
+  font-style: italic;
+  text-align: right;
+  }
+
+input[id='zip']  {
+    display: block;
+    width: 60%;
+  }
+
+textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  }
+
+button {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding: 15px;
+
+    letter-spacing: 1px;
+
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background: #7b848e;
+  }
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 0;
+  transition: all .10s ease-in;
+  border: 2px solid #2d3945;
+  color: #2d3945;
+  background: #fff;
+  text-align: left;
+}
+
+
+/* =============
+  Class Layout
+============== */
+
+.a {
+  margin-top: 30px;
+}
+
+.b p {
+  line-height: 25px;
+  margin: 0;
+}
+
+.other
+  {
+    margin-top: 25px;
+  }
+
+/* =============
+  Line Divider
+============== */
+
+.top
+  {
+    height: 8px;
+
+    border-top: 4px solid #2d3945;
+    border-bottom: 2px solid #2d3945;
+  }
+
+.bottom
+  {
+    margin: 28px 0 28px;
+
+    border-top: 2px solid #2d3945;
+  }
+
+
+/* =============
+  MEDIA QUERY
+============== */
+
+@media screen and (min-width: 768px) {
+
+/* =============
+  Header
+============== */
+
+  .subhead,
+  form {
+    width: 60%;
+    margin: auto;
+  }
+
+  .subhead h2{
+    margin-top: 65px;
+    font-size: 1.25em;
+  }
+
+/* =============
+  Form
+============== */
+
+  form {
+    margin-top: 30px;
+  }
+
+  .a legend {
+    margin-bottom: 30px;
+  }
+
+  .b legend {
+    margin-bottom: 21px;
+  }
+
+
+  .top,
+  .labelleft {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: baseline;
+  }
+
+  label {
+    margin-right: 5px;
+    width: 30%;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'],
+  select[id='state'] {
+    width: 70%;
+  }
+
+  .labelleft input[id='zip'] {
+    width: 30%;
+  }
+
+/* =============
+  Classes
+============== */
+
+  .a {
+    padding-bottom: 14px;
+  }
+
+  .b {
+    margin-top: 50px
+  }
+
+}
